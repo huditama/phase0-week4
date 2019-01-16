@@ -1,4 +1,5 @@
 function changeMe(arr) {
+  var count = 1
   for (i = 0; i < arr.length; i++) {
    
   if (arr[i][3] === undefined) {
@@ -13,6 +14,8 @@ function changeMe(arr) {
     gender: arr[i][2],
     age: arr[i][3]
   }
+  console.log(count + '. ' + object.firstName + ' ' + object.lastName)
+  count++
   console.log(object)
  }
 }
