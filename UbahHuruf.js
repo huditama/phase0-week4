@@ -4,9 +4,13 @@ function ubahHuruf(kata) {
 
   for (i = 0; i < kata.length; i++) {
     for (j = 0; j < fullAlphabet.length; j++) {
-      if (kata[i] === fullAlphabet[j]) {
-        string += fullAlphabet[j+1]
-      }
+      if (kata[i] == fullAlphabet[j]) {
+        if (kata[i] == 'z') {
+            string += 'a'
+        } else {
+            string += fullAlphabet[j+1]
+        }
+      }  
     }
   }
 return string
